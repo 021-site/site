@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تماس با ما | موسو</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+<header class="header"><div class="container nav">
+<a href="index.html" class="logo"><span class="logo-icon">M</span><span class="site-name">موسو</span></a>
+<nav class="links"><a href="index.html">خانه</a><a href="about.html">درباره ما</a><a href="contact.html" class="active">تماس</a><a href="admin.html" class="admin-link">پنل مدیریت</a></nav>
+</div></header>
+<section class="container page-head"><h1>📞 تماس با موسو</h1><p>کمتر از ۲۴ ساعت جواب می‌دهیم</p></section>
+<section class="container contact-grid">
+<div class="contact-info">
+<div class="c-card">📱<b>تلفن</b><span id="cPhone">۰۲۱-۱۲۳۴۵۶۷۸</span></div>
+<div class="c-card">📍<b>آدرس</b><span id="cAddr">تهران، ولیعصر</span></div>
+<div class="c-card">📸<b>اینستاگرام</b><span id="cInsta">@muso.ir</span></div>
+<div class="c-card">⏰<b>ساعات کاری</b><span>شنبه تا پنجشنبه ۹ تا ۲۱</span></div>
+</div>
+<form id="contactForm" class="contact-form">
+<h3>فرم پیام سریع</h3>
+<label>نام<input name="name" required placeholder="نام شما"></label>
+<label>موبایل<input name="phone" required placeholder="۰۹..."></label>
+<label>پیام<textarea name="msg" rows="4" required placeholder="متن پیام..."></textarea></label>
+<button class="btn-primary full" type="submit">ارسال پیام ←</button>
+<p id="formOk" class="form-ok"></p>
+</form>
+</section>
+<footer class="footer"><p class="copy">© ۱۴۰۵ موسو</p></footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موسو | فروشگاه مدرن</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a href="index.html" class="logo"><span class="logo-icon">M</span><span class="site-name">موسو</span></a>
+<nav class="links">
+<a href="index.html" class="active">خانه</a>
+<a href="about.html">درباره ما</a>
+<a href="contact.html">تماس</a>
+<a href="admin.html" class="admin-link">پنل مدیریت</a>
+</nav>
+<div class="nav-actions">
+<div class="search-box"><input id="searchInput" placeholder="جست‌وجو..."></div>
+<button id="cartBtn" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+<button id="menuBtn" class="menu-btn">☰</button>
+</div>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<a href="index.html">خانه</a><a href="about.html">درباره ما</a><a href="contact.html">تماس</a><a href="admin.html">پنل مدیریت</a>
+</div>
+</header>
+<section class="hero container">
+<div class="hero-text">
+<div id="heroBadge" class="hero-badge">✨ کالکشن جدید ۱۴۰۵ رسید</div>
+<h1 id="heroTitle">موسو؛ خفن‌ترین فروشگاه آنلاین ایران</h1>
+<p id="heroSubtitle">منتخبی از بهترین محصولات با ضمانت اصالت، ارسال سریع و قیمت منصفانه.</p>
+<div class="hero-btns">
+<a href="#shop" class="btn-primary" id="heroCta">مشاهده محصولات ←</a>
+<a href="about.html" class="btn-ghost">درباره ما</a>
+</div>
+<div class="hero-stats">
+<div><b>۱۲هزار+</b><span>مشتری راضی</span></div>
+<div><b>۴.۹/۵</b><span>امتیاز فروشگاه</span></div>
+<div><b>ارسال</b><span>سریع سراسری</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-card main-card"><img src="https://picsum.photos/seed/muso1/600/600" alt="محصول ویژه"><div class="float-price">هدفون پرو <b>۲٬۴۹۰٬۰۰۰ تومان</b></div></div>
+<div class="hero-card mini-card c1">🚚 ارسال رایگان بالای ۱ میلیون</div>
+<div class="hero-card mini-card c2">✅ ۷ روز ضمانت بازگشت</div>
+</div>
+</section>
+<section class="features container">
+<div class="feat">🚀<h3>ارسال اکسپرس</h3><p>تحویل ۲۴ ساعته در تهران</p></div>
+<div class="feat">🛡️<h3>ضمانت اصالت</h3><p>کالای اورجینال با فاکتور</p></div>
+<div class="feat">💳<h3>پرداخت امن</h3><p>درگاه امن بانکی</p></div>
+<div class="feat">🎧<h3>پشتیبانی ۲۴/۷</h3><p>پاسخ‌گویی همیشه</p></div>
+</section>
+<section id="shop" class="container shop">
+<div class="shop-head">
+<div><h2>🛍️ محصولات منتخب</h2><p id="productCount"></p></div>
+<div id="cats" class="cats"></div>
+</div>
+<div id="productsGrid" class="grid"></div>
+</section>
+<section class="container banner">
+<div class="banner-box">
+<h2>عضو باشگاه موسو شو، ۱۵٪ تخفیف بگیر!</h2>
+<p>شماره موبایلت رو توی صفحه تماس ثبت کن تا کد تخفیف بگیری.</p>
+<a href="contact.html" class="btn-white">دریافت تخفیف</a>
+</div>
+</section>
+<footer class="footer">
+<div class="container foot-grid">
+<div><h3 class="site-name">موسو</h3><p id="footAbout">فروشگاه مدرن ایرانی.</p></div>
+<div><h4>دسترسی سریع</h4><a href="index.html">خانه</a><a href="about.html">درباره ما</a><a href="contact.html">تماس</a></div>
+<div><h4>تماس</h4><p id="footPhone">۰۲۱-۱۲۳۴۵۶۷۸</p><p id="footAddr">تهران، ولیعصر</p></div>
+</div>
+<p class="copy">© ۱۴۰۵ موسو — قدرت گرفته از data.json</p>
+</footer>
+<div id="cartDrawer" class="cart-drawer">
+<div class="cart-head"><h3>سبد خرید</h3><button id="closeCart">✕</button></div>
+<div id="cartItems" class="cart-items"></div>
+<div class="cart-foot"><div class="total"><span>جمع کل:</span><b id="cartTotal">۰ تومان</b></div><button class="btn-primary full">ثبت سفارش</button></div>
+</div>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
